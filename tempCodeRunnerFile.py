@@ -1,1 +1,1 @@
-p
+    print(grid[y])    
