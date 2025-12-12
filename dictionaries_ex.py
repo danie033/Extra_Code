@@ -1,5 +1,22 @@
-data={"Daniel":"Figueroa","Ambri":"Butler","Carlos":"Gomez","Oscar":"Cepeda"}
+data = {
+    "johndoe": {
+        "username": "johndoe",
+        "full_name": "John Doe",
+        "email": "johndoe@example.com",
+        "hashed_password": "fakehashedsecret",
+        "disabled": False,
+    },
+    "alice": {
+        "username": "alice",
+        "full_name": "Alice Wonderson",
+        "email": "alice@example.com",
+        "hashed_password": "fakehashedsecret2",
+        "disabled": True,
+    },
+}
+other=data.get("johndoe")
 
+print(other)
 # print("Printing keys...")
 # for i in data:
 #     print(i)
@@ -41,7 +58,7 @@ class Car:
     def set_make(s,make):
         s.__make=make
 
-car1=Car("Honda",45651)
+# car1=Car("Honda",45651)
 
-car1.set_make("Kia")
-print(car1.get_make())
+# car1.set_make("Kia")
+# print(car1.get_make())
